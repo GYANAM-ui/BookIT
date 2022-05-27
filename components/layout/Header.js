@@ -36,7 +36,7 @@ const Header = () => {
                 <div className="col-3 mt-3 mt-md-0 text-center">
 
                     {user ? (
-                        <div className="ml-4 dropdown d-line">
+                        <div className="mr-4 dropdown d-line profiles">
                             <a
                                 className="btn dropdown-toggle mr-4"
                                 id='dropDownMenuButton'
@@ -48,10 +48,10 @@ const Header = () => {
                                     <img
                                         src={user.avatar && user.avatar.url}
                                         alt={user && user.name}
-                                        className="rounded-circle"
+                                        className="rounded-circle profile-img"
                                     />
                                 </figure>
-                                <span>{user && user.name}</span>
+                                <span className='username'>{user && user.name}</span>
                             </a>
 
                             <div className="dropdown-menu" aria-labelledby='dropDownMenuButton'>
